@@ -1,197 +1,56 @@
-@charset "UTF-8";
+<!DOCTYPE html>
+<html lang="ja">
 
-/*
---------------------*/
-html {
-    font-size: 100%;
-    background-color: #ebecf6;
-}
+<head>
+    <meta charset="UTF-8">
+    <title>秋葉神社</title>
+    <meta name="description" content="秋葉神社のwebサイトです">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-body {
-    text-align: center;
-    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "sans-serif";
-    line-height: 1.7;
-    color: black;
-    margin: auto;
-    font-family: "游教科書体";
-}
+<body>
+    <header class="header">
+        <nav>
+            <ul class="main-nav">
+                <li><a href="rekishi.html">歴史</a></li>
+                <li><a href="fuukei.html">風景</a></li>
+                <li><a href="kitou.html">祈祷</a></li>
+                <li><a href="index.html"><img class="logo" src="images/logoimage.png" alt="秋葉神社ホーム"></a></li>
+                <li><a href="gyouzi.html">行事</a></li>
+                <li><a href="acces.html">交通</a></li>
+                <li><a href="situmon.html">質問</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-v">
+        <h1>秋葉山本宮 秋葉神社</h1>
+    </div>
+    <div class="wrap">
+        <div class="himori">
+            <article>
+                <h2>火防りの神様 秋葉山本宮秋葉神社</h2>
+                <p>
+                    秋葉山本宮秋葉神社は東海随一の霊山との呼び声も名高い秋葉山を神体山と仰ぎ、創建は和銅二（西暦七百九）年と伝えられております。
+                    中世には「秋葉大権現」と称して、その御神徳は国中に知れわたり、朝廷からは正一位の神階を賜り、著名な武将からも数多くの名刀が寄進されました。
+                    更に江戸時代には全国に秋葉講が結成され、街道は参詣者で賑わいました。今なお古式の祭儀がそのままに営まれ、全国津々浦々より崇敬されております。
+                </p>
+            </article>
+            <aside>
+                <img src="images/torii.png" alt="秋葉神社鳥居">
+            </aside>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>email:@sist.ac.jp<br>tell:053-985-0111</p>
+        <a href="index.html">
+            <ul class="footer-logo">
+                <li><img src="images/logoimage.png" alt="ロゴ"></li>
+                <li>秋葉山本宮 秋葉神社</li>
+            </ul>
+        </a>
+    </footer>
+</body>
 
-p {
-    font-size: 1.5rem;
-}
-
-h1 {
-    font-size: 3.5rem;
-}
-
-h2 {
-    font-size: 2.25rem;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-.wrap {
-    width: 80vw;
-    margin: auto;
-    margin-top: 70px;
-}
-
-header {
-    position: relative;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    background-color: antiquewhite;
-    width: 100%;
-}
-
-.main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 50px;
-    padding: 10px 120px 0 120px;
-}
-
-.main-nav a {
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    color: #000;
-    opacity: 1;
-}
-
-.main-nav a:hover {
-    opacity: 0.5;
-}
-
-.logo {
-    width: 110px;
-}
-
-.main-v {
-    background-image: url(../images/main-v.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.main-v h1 {
-    padding: 65px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-}
-
-.himori {
-    width: 100%;
-    display: flex;
-    flex-flow: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-}
-
-article {
-    text-align: left;
-    height: 600px;
-    writing-mode: vertical-rl;
-}
-
-article h2 {
-    margin-left: 30px;
-}
-
-article p {
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 20px;
-    margin-left: 30px;
-}
-
-.himori img {
-    height: 100vh;
-}
-
-.uguisu-v {
-    background-image: url(../images/uguisu.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.uguisu-v h1 {
-    padding: 270px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-}
-
-.fukei-wrap{
-    margin: 70px auto 35px auto;
-}
-
-.fukei{
-    width: 85vw;
-    margin: auto;
-    display: flex;
-    flex-flow: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 180px;
-}
-
-
-
-.fukei article{
-    height: 350px;
-}
-
-.fukei article p{
-    background: none;
-}
-
-.fukei img{
-    width: 500px;
-}
-
-.footer {
-    margin-top: 35px;
-    background-color: antiquewhite;
-}
-
-.footer p {
-    font-size: 1.25rem;
-}
-
-.footer-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-}
-
-.footer-logo:hover {
-    opacity: 0.5;
-}
-
-.footer-logo img {
-    width: 100px;
-}
+</html>
